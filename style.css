@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     margin: 0;
     background-image: url(https://e0.pxfuel.com/wallpapers/870/708/desktop-wallpaper-minions-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'CookieRun-Regular';
 }
 
 .container{
@@ -24,6 +32,7 @@ body{
 
 .task-tabs div{
     padding: 1em;
+    cursor: pointer;
 }
 
 #under-line{
@@ -34,6 +43,7 @@ body{
     left: 0px;
     top: 52px;
     padding: 0px;
+    transition: 0.5s;
 }
 
 .task{
@@ -69,3 +79,12 @@ body{
 .button-box {
     display: flex;
 }
+
+.button-box button:first-child:hover {
+    background-color: greenyellow;
+  }
+  .button-box button:nth-child(2):hover {
+    background-color: rgb(255, 0, 0, 0.3);
+  }
+
+  
